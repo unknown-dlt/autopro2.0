@@ -5,7 +5,8 @@
 ### Основной скрипт
 
 - **`start.ps1`** — PowerShell‑скрипт, который:
-  - проверяет наличие `node` и `npm`;
+  - проверяет наличие `node`, `npm` и `docker`;
+  - поднимает PostgreSQL через `docker compose up -d`;
   - при первом запуске устанавливает зависимости в:
     - корне проекта (`package.json`);
     - `backend`;
@@ -36,5 +37,6 @@
 ### Требования
 
 - Установленный **Node.js** (вместе с `npm`).
+- Установленный **Docker Desktop** (или совместимый Docker Engine с `docker compose`).
 - Разрешён запуск PowerShell‑скриптов (в примере выше используется `-ExecutionPolicy Bypass` только для одного запуска).
 

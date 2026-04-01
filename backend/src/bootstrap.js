@@ -1,18 +1,16 @@
-require("dotenv").config();
-
 const { createApp } = require("./app");
-const { initDb } = require("./db/schema");
+const { initDb } = require("./db/migrate");
 
 const PORT = process.env.PORT || 3000;
-const app = createApp();
 
 initDb()
   .then(() => {
+    const app = createApp();
     app.listen(PORT, () => {
       console.log(`AutoPro backend listening on http://localhost:${PORT}`);
     });
   })
-  .catch((e) => {
-    console.error("Failed to initialize PostgreSQL storage:", e);
+  .catch((err) => {
+    console.error("Failed to initialize database or start server:", err);
     process.exit(1);
   });

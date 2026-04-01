@@ -22,6 +22,7 @@ Write-Host ""
 Write-Host "Checking required tools..."
 Ensure-Command -Name "node"
 Ensure-Command -Name "npm"
+Ensure-Command -Name "docker"
 
 if (-not $SkipInstall) {
     Write-Host ""
@@ -58,6 +59,11 @@ if (-not $SkipInstall) {
     Write-Host ""
     Write-Host "Skipping dependency install (-SkipInstall flag)."
 }
+
+Write-Host ""
+Write-Host "Starting PostgreSQL in Docker..."
+docker compose up -d
+if ($LASTEXITCODE -ne 0) { throw "docker compose up -d failed." }
 
 Write-Host ""
 Write-Host "Starting project (backend + frontend)..."

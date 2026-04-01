@@ -36,15 +36,31 @@ const router = createRouter({
   routes,
 });
 
-router.beforeEach((to, from, next) => {
+router.beforeEach(async (to, from, next) => {
   const auth = useAuthStore();
+  auth.initFromStorage();
+  if (auth.token && !auth.user) {
+    try {
+      await auth.fetchMe();
+    } catch {
+      auth.logout();
+    }
+  }
   if (to.meta.requiresAuth && !auth.isAuthenticated) {
     next({ name: "login" });
   } else if (to.name === "login" && auth.isAuthenticated) {
     next({ name: "dashboard" });
   } else {
     if (auth.role === "ASSISTANT") {
-      const allowed = ["dashboard", "clients", "services", "history", "parts"];
+      const allowed = [
+        "dashboard",
+        "schedule",
+        "clients",
+        "services",
+        "history",
+        "parts",
+        "mechanics",
+      ];
       if (to.name && !allowed.includes(to.name.toString())) {
         next({ name: "dashboard" });
         return;

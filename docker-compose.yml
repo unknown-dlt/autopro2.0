@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: autopro-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: autopro
+      POSTGRES_USER: autopro
+      POSTGRES_PASSWORD: autopro
+    ports:
+      - "5432:5432"
+    volumes:
+      - autopro_pgdata:/var/lib/postgresql/data
+
+volumes:
+  autopro_pgdata:

@@ -8,13 +8,6 @@
       </div>
       <form class="login-form" @submit.prevent="submit">
         <label class="field">
-          <span>Роль</span>
-          <select v-model="role">
-            <option value="MANAGER">Менеджер</option>
-            <option value="ASSISTANT">Механик</option>
-          </select>
-        </label>
-        <label class="field">
           <span>ID работника</span>
           <input
             :value="employeeId"
@@ -48,7 +41,6 @@ export default {
   name: "LoginPage",
   data() {
     return {
-      role: "MANAGER",
       employeeId: "",
       password: "",
       captchaA: 0,
@@ -107,7 +99,6 @@ export default {
         }
         const auth = useAuthStore();
         await auth.login({
-          role: this.role,
           employeeId: this.employeeId.trim(),
           password: this.password,
           captcha: {

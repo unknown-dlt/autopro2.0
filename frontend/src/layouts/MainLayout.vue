@@ -78,6 +78,7 @@ export default {
     return {
       menu: [
         { name: "dashboard", label: "Обзор", to: "/app/dashboard" },
+        { name: "clients", label: "Клиенты", to: "/app/clients" },
         { name: "services", label: "Каталог услуг", to: "/app/services" },
         { name: "parts", label: "Склад запчастей", to: "/app/parts" },
         { name: "history", label: "История обслуживаний", to: "/app/history" },
@@ -97,7 +98,7 @@ export default {
     },
     visibleMenu() {
       if (this.role === "ASSISTANT") {
-        const allowed = ["dashboard", "services", "history", "parts"];
+        const allowed = ["dashboard", "clients", "services", "history", "parts"];
         return this.menu.filter((m) => allowed.includes(m.name));
       }
       return this.menu;

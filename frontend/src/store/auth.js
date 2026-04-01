@@ -15,9 +15,8 @@ export const useAuthStore = defineStore("auth", {
     },
   },
   actions: {
-    async login({ role, employeeId, password, captcha }) {
+    async login({ employeeId, password, captcha }) {
       const resp = await axios.post("/api/login", {
-        role,
         employeeId,
         password,
         captcha,
@@ -31,6 +30,11 @@ export const useAuthStore = defineStore("auth", {
       if (this.token) {
         axios.defaults.headers.common.Authorization = "Bearer " + this.token;
       }
+    },
+    async fetchMe() {
+      if (!this.token) return;
+      const { data } = await axios.get("/api/me");
+      this.user = data.user;
     },
     logout() {
       this.user = null;

@@ -464,7 +464,7 @@
       "fullName": "Иванов Иван",
       "position": "автомеханик",
       "hireDate": "2020-01-10",
-      "active": true,
+      "active": false,
       "baseSalary": 45000,
       "bonusPerService": 500
     },
@@ -529,8 +529,14 @@
       "status": "COMPLETED",
       "comment": "Плановое ТО по регламенту",
       "requiredParts": [
-        { "partId": 4, "quantity": 1 },
-        { "partId": 11, "quantity": 1 }
+        {
+          "partId": 4,
+          "quantity": 1
+        },
+        {
+          "partId": 11,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -562,7 +568,10 @@
       "status": "COMPLETED",
       "comment": "Замена свечей после 30 тыс. км",
       "requiredParts": [
-        { "partId": 10, "quantity": 1 }
+        {
+          "partId": 10,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -579,7 +588,10 @@
       "status": "COMPLETED",
       "comment": "Замена изношенных передних колодок",
       "requiredParts": [
-        { "partId": 6, "quantity": 1 }
+        {
+          "partId": 6,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -626,7 +638,10 @@
       "status": "COMPLETED",
       "comment": "Плановая замена ремня ГРМ",
       "requiredParts": [
-        { "partId": 14, "quantity": 1 }
+        {
+          "partId": 14,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -643,7 +658,10 @@
       "status": "COMPLETED",
       "comment": "Стойка стабилизатора с люфтом справа",
       "requiredParts": [
-        { "partId": 19, "quantity": 2 }
+        {
+          "partId": 19,
+          "quantity": 2
+        }
       ]
     },
     {
@@ -690,8 +708,14 @@
       "status": "COMPLETED",
       "comment": "Подтекание радиатора, замена",
       "requiredParts": [
-        { "partId": 24, "quantity": 1 },
-        { "partId": 32, "quantity": 2 }
+        {
+          "partId": 24,
+          "quantity": 1
+        },
+        {
+          "partId": 32,
+          "quantity": 2
+        }
       ]
     },
     {
@@ -708,7 +732,10 @@
       "status": "COMPLETED",
       "comment": "Замена сцепления, пробег 180 тыс.",
       "requiredParts": [
-        { "partId": 16, "quantity": 1 }
+        {
+          "partId": 16,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -725,7 +752,10 @@
       "status": "COMPLETED",
       "comment": "Износ передних стоек, замена пары",
       "requiredParts": [
-        { "partId": 17, "quantity": 1 }
+        {
+          "partId": 17,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -742,8 +772,14 @@
       "status": "COMPLETED",
       "comment": "Шум помпы, замена",
       "requiredParts": [
-        { "partId": 25, "quantity": 1 },
-        { "partId": 32, "quantity": 1 }
+        {
+          "partId": 25,
+          "quantity": 1
+        },
+        {
+          "partId": 32,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -760,8 +796,14 @@
       "status": "COMPLETED",
       "comment": "Сильная вибрация, замена опор двигателя",
       "requiredParts": [
-        { "partId": 21, "quantity": 1 },
-        { "partId": 22, "quantity": 1 }
+        {
+          "partId": 21,
+          "quantity": 1
+        },
+        {
+          "partId": 22,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -778,7 +820,10 @@
       "status": "COMPLETED",
       "comment": "Переобувка на лето, балансировка",
       "requiredParts": [
-        { "partId": 33, "quantity": 4 }
+        {
+          "partId": 33,
+          "quantity": 4
+        }
       ]
     },
     {
@@ -795,7 +840,10 @@
       "status": "COMPLETED",
       "comment": "Диагностика электрики, устранили проблему с запуском",
       "requiredParts": [
-        { "partId": 29, "quantity": 1 }
+        {
+          "partId": 29,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -842,7 +890,10 @@
       "status": "COMPLETED",
       "comment": "Замена воздушного фильтра и осмотр",
       "requiredParts": [
-        { "partId": 12, "quantity": 1 }
+        {
+          "partId": 12,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -874,7 +925,10 @@
       "status": "COMPLETED",
       "comment": "Замена цепи ГРМ по регламенту",
       "requiredParts": [
-        { "partId": 15, "quantity": 1 }
+        {
+          "partId": 15,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -936,8 +990,14 @@
       "status": "COMPLETED",
       "comment": "Замена масла и фильтра, ТО-60",
       "requiredParts": [
-        { "partId": 4, "quantity": 1 },
-        { "partId": 11, "quantity": 1 }
+        {
+          "partId": 4,
+          "quantity": 1
+        },
+        {
+          "partId": 11,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -969,7 +1029,10 @@
       "status": "COMPLETED",
       "comment": "Плановая замена свечей",
       "requiredParts": [
-        { "partId": 10, "quantity": 1 }
+        {
+          "partId": 10,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -1001,7 +1064,10 @@
       "status": "COMPLETED",
       "comment": "Скрип передних тормозов, замена колодок",
       "requiredParts": [
-        { "partId": 6, "quantity": 1 }
+        {
+          "partId": 6,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -1033,8 +1099,14 @@
       "status": "COMPLETED",
       "comment": "Замена радиатора охлаждения",
       "requiredParts": [
-        { "partId": 24, "quantity": 1 },
-        { "partId": 32, "quantity": 1 }
+        {
+          "partId": 24,
+          "quantity": 1
+        },
+        {
+          "partId": 32,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -1051,7 +1123,10 @@
       "status": "COMPLETED",
       "comment": "Замена передних стоек стабилизатора",
       "requiredParts": [
-        { "partId": 19, "quantity": 2 }
+        {
+          "partId": 19,
+          "quantity": 2
+        }
       ]
     },
     {
@@ -1068,7 +1143,10 @@
       "status": "COMPLETED",
       "comment": "Износ передних амортизаторов, замена",
       "requiredParts": [
-        { "partId": 17, "quantity": 1 }
+        {
+          "partId": 17,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -1100,7 +1178,10 @@
       "status": "COMPLETED",
       "comment": "Диагностика электрики приборной панели",
       "requiredParts": [
-        { "partId": 28, "quantity": 1 }
+        {
+          "partId": 28,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -1117,8 +1198,14 @@
       "status": "COMPLETED",
       "comment": "Замена воздушного фильтра и свечей",
       "requiredParts": [
-        { "partId": 12, "quantity": 1 },
-        { "partId": 10, "quantity": 1 }
+        {
+          "partId": 12,
+          "quantity": 1
+        },
+        {
+          "partId": 10,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -1135,7 +1222,10 @@
       "status": "COMPLETED",
       "comment": "Шиномонтаж и балансировка комплекта",
       "requiredParts": [
-        { "partId": 33, "quantity": 4 }
+        {
+          "partId": 33,
+          "quantity": 4
+        }
       ]
     },
     {
@@ -1152,7 +1242,10 @@
       "status": "COMPLETED",
       "comment": "Замена топливного фильтра",
       "requiredParts": [
-        { "partId": 13, "quantity": 1 }
+        {
+          "partId": 13,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -1214,7 +1307,10 @@
       "status": "IN_PROGRESS",
       "comment": "Замена сцепления, авто в работе",
       "requiredParts": [
-        { "partId": 16, "quantity": 1 }
+        {
+          "partId": 16,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -1561,7 +1657,10 @@
       "status": "IN_PROGRESS",
       "comment": "Замена задних амортизаторов",
       "requiredParts": [
-        { "partId": 18, "quantity": 1 }
+        {
+          "partId": 18,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -1578,7 +1677,10 @@
       "status": "CREATED",
       "comment": "Регламентная замена топливного фильтра",
       "requiredParts": [
-        { "partId": 13, "quantity": 1 }
+        {
+          "partId": 13,
+          "quantity": 1
+        }
       ]
     },
     {
@@ -1595,7 +1697,10 @@
       "status": "CONFIRMED",
       "comment": "Скрип задних тормозов, замена колодок",
       "requiredParts": [
-        { "partId": 7, "quantity": 1 }
+        {
+          "partId": 7,
+          "quantity": 1
+        }
       ]
     }
   ],
